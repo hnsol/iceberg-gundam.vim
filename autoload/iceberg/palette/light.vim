@@ -1,26 +1,27 @@
 function! iceberg#palette#light#create() abort
+  " color palette, Z-gundam QEVELEY ver. 
   let hue_base = 230
 
-  let hue_red    = 340
-  let hue_orange = 25
-  let hue_green  = 90
-  let hue_lblue  = 200
-  let hue_blue   = 220
-  let hue_purple = 260
+  let hue_blue   = 215
+  let hue_green  = 179
+  let hue_lblue  = 262
+  let hue_orange = 42
+  let hue_purple = 336
+  let hue_red    = 337
 
   " gui {{{
   let g = {}
 
   " palette
-  let g.blue   = pgmnt#color#hsl(hue_blue,   0.55, 0.40)
-  let g.green  = pgmnt#color#hsl(hue_green,  0.40, 0.40)
-  let g.lblue  = pgmnt#color#hsl(hue_lblue,  0.45, 0.45)
-  let g.orange = pgmnt#color#hsl(hue_orange, 0.55, 0.50)
-  let g.purple = pgmnt#color#hsl(hue_purple, 0.38, 0.53)
-  let g.red    = pgmnt#color#hsl(hue_red,    0.55, 0.56)
+  let g.blue   = pgmnt#color#hsl(hue_blue,   0.95, 0.45)    " キュベレイ blue like
+  let g.green  = pgmnt#color#hsl(hue_green,  0.23, 0.39)    " キュベレイ
+  let g.lblue  = pgmnt#color#hsl(hue_lblue,  0.74, 0.42)    " キュベレイ purp like
+  let g.orange = pgmnt#color#hsl(hue_orange, 0.84, 0.40)    " ミネルバ
+  let g.purple = pgmnt#color#hsl(hue_purple, 1.00, 0.63)    " キュベレイ pink like
+  let g.red    = pgmnt#color#hsl(hue_red,    0.65, 0.48)    " キュベレイ
 
   " normal
-  let g.normal_bg = pgmnt#color#hsl(hue_base, 0.10, 0.92)
+  let g.normal_bg = pgmnt#color#hsl(hue_base, 0.10, 0.85)   " a little bit darker
   let g.normal_fg = pgmnt#color#hsl(hue_base, 0.20, 0.25)
 
   " tint

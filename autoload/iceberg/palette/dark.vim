@@ -1,39 +1,40 @@
 function! iceberg#palette#dark#create() abort
-  let hue_base = 230
+  " color palette, Gundam THE ORIGIN ver. 
+  let hue_base      = 196       " lblueと色相をあわせた
 
-  let hue_red = 0
-  let hue_orange = 25
-  let hue_green = 70
-  let hue_lblue = 190
-  let hue_blue = 215
-  let hue_purple = 255
+  let hue_blue      = 205
+  let hue_green     = 101
+  let hue_lblue     = 196
+  let hue_orange    = 50
+  let hue_purple    = 297
+  let hue_red       = 350
 
   " gui {{{
   let g = {}
 
   " palette
-  let g.blue   = pgmnt#color#hsl(hue_blue,   0.37, 0.65)
-  let g.green  = pgmnt#color#hsl(hue_green,  0.32, 0.63)
-  let g.lblue  = pgmnt#color#hsl(hue_lblue,  0.32, 0.65)
-  let g.orange = pgmnt#color#hsl(hue_orange, 0.65, 0.68)
-  let g.purple = pgmnt#color#hsl(hue_purple, 0.32, 0.68)
-  let g.red    = pgmnt#color#hsl(hue_red,    0.65, 0.68)
+  let g.blue   = pgmnt#color#hsl(hue_blue,   0.97, 0.37)    " ガンダムブルー少し変更
+  let g.green  = pgmnt#color#hsl(hue_green,  0.31, 0.46)    " ガルマ制服
+  let g.lblue  = pgmnt#color#hsl(hue_lblue,  1.00, 0.38)    " ガンダムブルー
+  let g.orange = pgmnt#color#hsl(hue_orange, 0.99, 0.65)    " ガンダムイエロー
+  let g.purple = pgmnt#color#hsl(hue_purple, 0.44, 0.45)    " メイン画像
+  let g.red    = pgmnt#color#hsl(hue_red,    1.00, 0.44)    " シャアスーツ
 
   " normal
-  let g.normal_bg = pgmnt#color#hsl(hue_base, 0.20, 0.11)
-  let g.normal_fg = pgmnt#color#hsl(hue_base, 0.10, 0.80)
+  let g.normal_bg = pgmnt#color#hsl(hue_base, 0.15, 0.08)   " 
+  let g.normal_fg = pgmnt#color#hsl(hue_base, 0.10, 0.75)   " 通常の字
 
   " tint
-  let g.blue_tint_bg   = pgmnt#color#mix(g.blue, g.normal_bg, 0.30)
-  let g.blue_tint_fg   = pgmnt#color#mix(g.blue, g.normal_fg, 0.30)
-  let g.green_tint_bg  = pgmnt#color#mix(g.green, g.normal_bg, 0.30)
-  let g.green_tint_fg  = pgmnt#color#mix(g.green, g.normal_fg, 0.30)
-  let g.lblue_tint_bg  = pgmnt#color#mix(g.lblue, g.normal_bg, 0.30)
-  let g.lblue_tint_fg  = pgmnt#color#mix(g.lblue, g.normal_fg, 0.30)
+  let g.blue_tint_bg   = pgmnt#color#mix(g.blue,   g.normal_bg, 0.30)
+  let g.blue_tint_fg   = pgmnt#color#mix(g.blue,   g.normal_fg, 0.30)
+  let g.green_tint_bg  = pgmnt#color#mix(g.green,  g.normal_bg, 0.30)
+  let g.green_tint_fg  = pgmnt#color#mix(g.green,  g.normal_fg, 0.30)
+  let g.lblue_tint_bg  = pgmnt#color#mix(g.lblue,  g.normal_bg, 0.30)
+  let g.lblue_tint_fg  = pgmnt#color#mix(g.lblue,  g.normal_fg, 0.30)
   let g.purple_tint_bg = pgmnt#color#mix(g.purple, g.normal_bg, 0.30)
   let g.purple_tint_fg = pgmnt#color#mix(g.purple, g.normal_fg, 0.30)
-  let g.red_tint_bg    = pgmnt#color#mix(g.red, g.normal_bg, 0.30)
-  let g.red_tint_fg    = pgmnt#color#mix(g.red, g.normal_fg, 0.30)
+  let g.red_tint_bg    = pgmnt#color#mix(g.red,    g.normal_bg, 0.30)
+  let g.red_tint_fg    = pgmnt#color#mix(g.red,    g.normal_fg, 0.30)
 
   " linenr
   let g.linenr_bg = pgmnt#color#adjust_color(
