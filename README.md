@@ -1,3 +1,8 @@
+cocoponさんの偉大なるカラースキーム、icebergに感激し、ガンダムっぽいカラースキームに手入れ。
+darkではTHE ORIGINふう、lightではキュベレイふう。
+
+## ここから下はオリジナルのドキュメントです
+
 ![Iceberg](https://cocopon.github.io/iceberg.vim/assets/github/20180804/cover.png)
 
 Iceberg is well-designed, bluish color scheme for Vim and Neovim.
